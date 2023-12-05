@@ -1,0 +1,22 @@
+# https://raw.githubusercontent.com/wlxuf/add_rule/main/ChatGPT.list
+DOMAIN,cdn.auth0.com
+DOMAIN,challenges.cloudflare.com
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,bard
+DOMAIN-KEYWORD,bing
+DOMAIN-KEYWORD,claude
