@@ -1,0 +1,6 @@
+#!name=CUSTOM_CONF
+#!desc=自定义配置
+#!category=local
+
+[General]
+dns-server = 223.5.5.5, 223.6.6.6, 114.114.114.114, system
