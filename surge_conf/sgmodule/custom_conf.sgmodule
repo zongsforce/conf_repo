@@ -3,4 +3,4 @@
 #!category=local
 
 [General]
-dns-server = 223.5.5.5, 223.6.6.6, 114.114.114.114, system
+dns-server = system
