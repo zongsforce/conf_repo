@@ -1,2 +1,6 @@
+#!name=Custom Conf
+#!desc=自定义配置
+#!category=local
+
 [Rule]
 FINAL,FLOW,dns-failed
