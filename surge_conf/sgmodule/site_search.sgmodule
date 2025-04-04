@@ -1,5 +1,5 @@
-#!name=快捷搜索
-#!desc=指令快捷搜索
+#!name=Site Search
+#!desc=快捷搜索
 #!category=local
 
 [URL Rewrite]
