@@ -3,7 +3,4 @@
 #!category=local
 
 [Proxy Group]
-FLOW = hidden=true
-Native = hidden=true
-FLOW_EXT = hidden=true
-External = hidden=true
+Google路由 = subnet, default = Google节点, "TYPE:CELLULAR" = Google节点, "TYPE:WIFI" = Google节点, "TYPE:WIRED" = Google节点, hidden = false
