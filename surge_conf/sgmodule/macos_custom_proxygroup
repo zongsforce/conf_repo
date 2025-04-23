@@ -1,0 +1,9 @@
+#!name=macOS Custom Proxy Group
+#!desc=macOS Custom Proxy Group
+#!category=local
+
+[Proxy Group]
+FLOW = hidden=true
+Native = hidden=true
+FLOW_EXT = hidden=true
+External = hidden=true
