@@ -132,4 +132,4 @@
 ^https:\/\/www.google.com\/search\?q=sg&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc= 302
 
 [MITM]
-hostname = %INSERT% www.google.com 
+hostname = %APPEND% www.google.com 
