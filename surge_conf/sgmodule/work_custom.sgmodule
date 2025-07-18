@@ -3,7 +3,7 @@
 #!category=local
 
 [General]
-dns-server = system
+dns-server = 223.5.5.5, 223.6.6.6, 114.114.114.114, 1.1.1.1, system
 skip-proxy = 192.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 127.0.0.1, localhost, *.local, *.byted.org, *bytedance.net
 always-raw-tcp-hosts = *.byted.org
 
