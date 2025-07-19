@@ -1,6 +1,6 @@
 #!name=Site Search
 #!desc=快捷搜索
-#!category=local
+#!category=tools
 
 [URL Rewrite]
 # ＞搜索
