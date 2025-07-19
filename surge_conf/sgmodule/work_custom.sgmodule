@@ -1,6 +1,6 @@
 #!name=Work Custom
 #!desc=工作配置
-#!category=local
+#!category=conf
 
 [General]
 dns-server = system
