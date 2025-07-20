@@ -1,0 +1,6 @@
+#!name=Custom Suspend
+#!desc=Suspend配置
+#!category=conf
+
+[SSID Setting]
+SSID:Echo_5G suspend=true
