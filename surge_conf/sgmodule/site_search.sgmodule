@@ -8,7 +8,7 @@
 # bing: 必应
 ^https:\/\/(www.)?google.com\/search\?q=bing\+([^&]+) https://bing.com/search?mkt=en-US&q=$1 302
 # bd: 百度
-^https:\/\/(www.)?google.com\/search\?q=bd\+([^&]+) https://baidu.com/s?wd=$1 302
+^https:\/\/(www.)?google.com\/search\?q=bd\+([^&]+) https://baidu.com/s?wd=$2 302
 # ddg: DuckDuckGo 
 ^https:\/\/(www.)?google.com\/search\?q=ddg\+([^&]+) https://duckduckgo.com/?ia=about&q=$1 302
 # gg: Google 英文
