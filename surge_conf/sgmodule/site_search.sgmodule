@@ -6,107 +6,107 @@
 # ＞搜索
 
 # bing: 必应
-^https:\/\/(www.)?google.com\/search\?q=bing\+([^&]+) https://bing.com/search?mkt=en-US&q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=bing\+([^&]+) https://bing.com/search?mkt=en-US&q=$2 302
 # bd: 百度
 ^https:\/\/(www.)?google.com\/search\?q=bd\+([^&]+) https://baidu.com/s?wd=$2 302
 # ddg: DuckDuckGo 
-^https:\/\/(www.)?google.com\/search\?q=ddg\+([^&]+) https://duckduckgo.com/?ia=about&q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=ddg\+([^&]+) https://duckduckgo.com/?ia=about&q=$2 302
 # gg: Google 英文
-^https:\/\/(www.)?google.com\/search\?q=gm\+([^&]+) https://google.com/search?q=$1&hl=en&lr=lang_en&cr=countryUS&safe=off 302
+^https:\/\/(www.)?google.com\/search\?q=gm\+([^&]+) https://google.com/search?q=$2&hl=en&lr=lang_en&cr=countryUS&safe=off 302
 # gm: Google 图片
-^https:\/\/(www.)?google.com\/search\?q=gm\+([^&]+) https://google.com/search?&tbm=isch&q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=gm\+([^&]+) https://google.com/search?&tbm=isch&q=$2 302
 # gh
-^https:\/\/(www.)?google.com\/search\?q=gh\+([^&]+) https://github.com/search?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=gh\+([^&]+) https://github.com/search?q=$2 302
 # sof: Stack Overflow
-^https:\/\/(www.)?google.com\/search\?q=sof\+([^&]+) https://stackoverflow.com/search?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=sof\+([^&]+) https://stackoverflow.com/search?q=$2 302
 # se: StackExchange
-^https:\/\/(www.)?google.com\/search\?q=se\+([^&]+) https://stackexchange.com/search?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=se\+([^&]+) https://stackexchange.com/search?q=$2 302
 # wa: WolframAlpha
-^https:\/\/(www.)?google.com\/search\?q=wa\+([^&]+) https://wolframalpha.com/input/?i=$1 302
+^https:\/\/(www.)?google.com\/search\?q=wa\+([^&]+) https://wolframalpha.com/input/?i=$2 302
 # wiki: 维基百科
-^https:\/\/(www.)?google.com\/search\?q=wiki(\+|%20)([^&]+) http://wikipedia.org/wiki/$2 302
+^https:\/\/(www.)?google.com\/search\?q=wiki(\+|%20)([^&]+) http://wikipedia.org/wiki/$3 302
 # wk: 维基中文
-^https:\/\/(www.)?google.com\/search\?q=wk(\+|%20)([^&]+) https://zh.wikipedia.org/wiki/$2 302
+^https:\/\/(www.)?google.com\/search\?q=wk(\+|%20)([^&]+) https://zh.wikipedia.org/wiki/$3 302
 # mg: Magi
-^https:\/\/(www.)?google.com\/search\?q=mg(\+|%20)([^&]+) https://magi.com/search?q=$2 302
+^https:\/\/(www.)?google.com\/search\?q=mg(\+|%20)([^&]+) https://magi.com/search?q=$3 302
 # yh: 油猴搜索
-^https:\/\/(www.)?google.com\/search\?q=yh\+([^&]+) https://greasyfork.org/zh-CN/scripts?q=$1 302
-^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+yh https://greasyfork.org/zh-CN/scripts?q=$1  302
+^https:\/\/(www.)?google.com\/search\?q=yh\+([^&]+) https://greasyfork.org/zh-CN/scripts?q=$2 302
+^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+yh https://greasyfork.org/zh-CN/scripts?q=$2  302
 # ios: 苹果应用搜索
-# ^https:\/\/(www.)?google.com\/search\?q=ios\+([^&]+) https://qimai.cn/search/index/search/$1 302
-# ^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+ios https://qimai.cn/search/index/search/$1 302
+# ^https:\/\/(www.)?google.com\/search\?q=ios\+([^&]+) https://qimai.cn/search/index/search/$2 302
+# ^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+ios https://qimai.cn/search/index/search/$2 302
 
 
 # ＞社区
 
 # db: 豆瓣
-^https:\/\/(www.)?google.com\/search\?q=db\+([^&]+) https://m.douban.com/search/?query=$1 302
+^https:\/\/(www.)?google.com\/search\?q=db\+([^&]+) https://m.douban.com/search/?query=$2 302
 # zhihu: 知乎
-^https:\/\/(www.)?google.com\/search\?q=zhihu\+([^&]+) https://zhihu.com/search?type=content&q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=zhihu\+([^&]+) https://zhihu.com/search?type=content&q=$2 302
 # wb: 微博
-^https:\/\/(www.)?google.com\/search\?q=wb\+([^&]+) https://s.weibo.com/weibo/$1 302
+^https:\/\/(www.)?google.com\/search\?q=wb\+([^&]+) https://s.weibo.com/weibo/$2 302
 # wx: 微信
-^https:\/\/(www.)?google.com\/search\?q=wx\+([^&]+) https://weixin.sogou.com/weixinwap?query=$1 302
+^https:\/\/(www.)?google.com\/search\?q=wx\+([^&]+) https://weixin.sogou.com/weixinwap?query=$2 302
 # rd: Reddit
-^https:\/\/(www.)?google.com\/search\?q=rd\+([^&]+) https://reddit.com/search?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=rd\+([^&]+) https://reddit.com/search?q=$2 302
 # tw: Twitter
-^https:\/\/(www.)?google.com\/search\?q=tw\+([^&]+) https://twitter.com/search?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=tw\+([^&]+) https://twitter.com/search?q=$2 302
 # ssp: 少数派
-^https:\/\/(www.)?google.com\/search\?q=ssp\+([^&]+) https://sspai.com/search/post/$1 302
+^https:\/\/(www.)?google.com\/search\?q=ssp\+([^&]+) https://sspai.com/search/post/$2 302
 # csdn: CSDN
-^https:\/\/(www.)?google.com\/search\?q=csdn\+([^&]+) https://so.csdn.net/so/search/s.do?q=$1&t=&u= 302
+^https:\/\/(www.)?google.com\/search\?q=csdn\+([^&]+) https://so.csdn.net/so/search/s.do?q=$2&t=&u= 302
 
 
 # ＞视频资源
 
 # ac: Acfun
-^https:\/\/(www.)?google.com\/search\?q=af\+([^&]+) https://acfun.cn/search?keyword=$1 302
-^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+af https://acfun.cn/search?keyword=$1 302
+^https:\/\/(www.)?google.com\/search\?q=af\+([^&]+) https://acfun.cn/search?keyword=$2 302
+^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+af https://acfun.cn/search?keyword=$2 302
 # bili: 哔哩哔哩
-^https:\/\/(www.)?google.com\/search\?q=bili\+([^&]+) https://m.bilibili.com/search?keyword=$1 302
+^https:\/\/(www.)?google.com\/search\?q=bili\+([^&]+) https://m.bilibili.com/search?keyword=$2 302
 # ytb: youtube
-^https:\/\/(www.)?google.com\/search\?q=ytb\+([^&]+) https://youtube.com/results?search_query=$1 302
+^https:\/\/(www.)?google.com\/search\?q=ytb\+([^&]+) https://youtube.com/results?search_query=$2 302
 # ph: PornHub
-^https:\/\/(www.)?google.com\/search\?q=ph\+([^&]+) https://cn.pornhub.com/video/search?search=$1 302
+^https:\/\/(www.)?google.com\/search\?q=ph\+([^&]+) https://cn.pornhub.com/video/search?search=$2 302
 # ys: 茶杯狐cupfox
-^https:\/\/(www.)?google.com\/search\?q=ys\+([^&]+) https://cupfox.app/search?key=$1 302
-^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+ys https://cupfox.app/search?key=$1 302
+^https:\/\/(www.)?google.com\/search\?q=ys\+([^&]+) https://cupfox.app/search?key=$2 302
+^https:\/\/(www.)?google.com\/search\?q=([^+]+)\+ys https://cupfox.app/search?key=$2 302
 
 
 # >翻译
 
 # yd: 有道
-^https:\/\/(www.)?google.com\/search\?q=yd\+([^&]+) http://dict.youdao.com/search?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=yd\+([^&]+) http://dict.youdao.com/search?q=$2 302
 # trc: Google 译至中
-^https:\/\/(www.)?google.com\/search\?q=trc\+([^&]+) https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1 302
+^https:\/\/(www.)?google.com\/search\?q=trc\+([^&]+) https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$2 302
 # tre: Google 译至英
-^https:\/\/(www.)?google.com\/search\?q=tre\+([^&]+) https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1 302
+^https:\/\/(www.)?google.com\/search\?q=tre\+([^&]+) https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$2 302
 # trj: Google 译至日
-^https:\/\/(www.)?google.com\/search\?q=trj\+([^&]+) https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1 302
+^https:\/\/(www.)?google.com\/search\?q=trj\+([^&]+) https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$2 302
 
 
 # >购物
 
 # zdm: 什么值得买
-^https:\/\/(www.)?google.com\/search\?q=zdm\+([^&]+) https://search.m.smzdm.com/?v=b&s=$1 302
+^https:\/\/(www.)?google.com\/search\?q=zdm\+([^&]+) https://search.m.smzdm.com/?v=b&s=$2 302
 # amz: 亚马逊
-^https:\/\/(www.)?google.com\/search\?q=amz\+([^&]+) https://amazon.cn/gp/aw/s/?k=$1 302
+^https:\/\/(www.)?google.com\/search\?q=amz\+([^&]+) https://amazon.cn/gp/aw/s/?k=$2 302
 # jd: 京东
-^https:\/\/(www.)?google.com\/search\?q=jd\+([^&]+) https://so.m.jd.com/ware/search.action?keyword=$1 302
+^https:\/\/(www.)?google.com\/search\?q=jd\+([^&]+) https://so.m.jd.com/ware/search.action?keyword=$2 302
 # tb: 淘宝
-^https:\/\/(www.)?google.com\/search\?q=tb\+([^&]+) https://s.m.taobao.com/h5?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=tb\+([^&]+) https://s.m.taobao.com/h5?q=$2 302
 # tm: 天猫
-^https:\/\/(www.)?google.com\/search\?q=tm\+([^&]+) https://s.m.tmall.com/m/search.htm?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=tm\+([^&]+) https://s.m.tmall.com/m/search.htm?q=$2 302
 
 
 # ＞网盘
 
 # gd: Google Drive
-^https:\/\/(www.)?google.com\/search\?q=gd\+([^&]+) https://google.com/search?q=%22Google+Drive%22+$1 302
+^https:\/\/(www.)?google.com\/search\?q=gd\+([^&]+) https://google.com/search?q=%22Google+Drive%22+$2 302
 # tgd: (t.me/gdurl 搜索 Google Drive 资源)
-^https:\/\/(www.)?google.com\/search\?q=tgd\+([^&]+) https://t.me/s/gdurl?q=$1 302
+^https:\/\/(www.)?google.com\/search\?q=tgd\+([^&]+) https://t.me/s/gdurl?q=$2 302
 # zgd: (https://zhao.pp.ua 搜索 Google Drive 资源)
-^https:\/\/(www.)?google.com\/search\?q=zgd(\+|%20)([^&]+) https://zhao.pp.ua/?q=$2 302
+^https:\/\/(www.)?google.com\/search\?q=zgd(\+|%20)([^&]+) https://zhao.pp.ua/?q=$3 302
 
 
 # >appstore
