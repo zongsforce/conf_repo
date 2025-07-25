@@ -130,4 +130,4 @@
 
 
 [MITM]
-hostname = %APPEND% www.google.com:443
+hostname = %APPEND% www.google.com
