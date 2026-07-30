@@ -1,0 +1,13 @@
+#!name=开心漫恶意跳转精准拦截
+#!desc=拦截 kaixinman.com 当前移动端恶意脚本及已确认的跳转链
+[URL Rewrite]
+^https:\/\/www\.kaixinman\.com\/like(\?.*)?$ _ reject
+^https:\/\/kaixinman\.com\/like(\?.*)?$ _ reject
+[Rule]
+DOMAIN-SUFFIX,xhuqhgmc.com,REJECT
+DOMAIN-SUFFIX,gewt00g.com,REJECT
+DOMAIN-SUFFIX,kpqppok.com,REJECT
+DOMAIN-SUFFIX,nmiqga.cn,REJECT
+DOMAIN-SUFFIX,luolhc222.vip,REJECT
+[MITM]
+hostname = %APPEND% www.kaixinman.com, kaixinman.com
