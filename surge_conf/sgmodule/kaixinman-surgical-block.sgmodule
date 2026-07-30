@@ -3,6 +3,7 @@
 
 [Body Rewrite]
 http-response ^https:\/\/(?:www\.)?kaixinman\.com\/chapter\/ <script[^>]+src=./like[^>]*></script> <!--kaixinman-malware-blocked-->
+http-response ^https:\/\/(?:www\.)?kaixinman\.com\/chapter\/ (href=)(\x22)(\/chapter\/[^\x22?]+)\x22 $1$2$3?surge_clean=3$2
 [URL Rewrite]
 ^https:\/\/www\.kaixinman\.com\/like(\?.*)?$ _ reject
 ^https:\/\/kaixinman\.com\/like(\?.*)?$ _ reject
