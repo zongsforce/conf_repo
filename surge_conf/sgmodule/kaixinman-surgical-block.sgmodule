@@ -2,11 +2,10 @@
 #!desc=拦截 kaixinman.com 当前移动端恶意脚本及已确认的跳转链
 
 [Body Rewrite]
-http-response ^https:\/\/(?:www\.)?kaixinman\.com\/chapter\/ <script[^>]+src=./like[^>]*></script> <!--kaixinman-malware-blocked-->
-http-response ^https:\/\/(?:www\.)?kaixinman\.com\/chapter\/ (href=)(\x22)(\/chapter\/[^\x22?]+)\x22 $1$2$3?surge_clean=3$2
+http-response ^https:\/\/(?:www\.)?kaixinman\.com\/chapter\/ <script[^>]*src\s*=\s*(?:\x22|\x27)(?:(?:https?:)?\/\/(?:www\.)?kaixinman\.com)?\/like(?:\?[^>\x22\x27]*)?(?:\x22|\x27)[^>]*>\s*<\/script> <!--kaixinman-malware-blocked-->
+http-response ^https:\/\/(?:www\.)?kaixinman\.com\/chapter\/ (href\s*=\s*)(\x22|\x27)((?:(?:https:)?\/\/(?:www\.)?kaixinman\.com)?\/chapter\/[^\x22\x27?#]+)(?:\x22|\x27) $1$2$3?surge_clean=20260730a$2
 [URL Rewrite]
-^https:\/\/www\.kaixinman\.com\/like(\?.*)?$ _ reject
-^https:\/\/kaixinman\.com\/like(\?.*)?$ _ reject
+^https?:\/\/(?:www\.)?kaixinman\.com\/like(?:[\/?].*)?$ _ reject
 [Rule]
 DOMAIN-SUFFIX,xhuqhgmc.com,REJECT
 DOMAIN-SUFFIX,gewt00g.com,REJECT
