@@ -1,0 +1,11 @@
+#!name=SideStore Loopback
+#!desc=代替 LocalDevVPN，把 10.7.0.1 反射回本机，供 SideStore 续签
+#!category=conf
+#!system=ios
+
+[General]
+ipv6-vif = disabled
+tun-included-routes = %INSERT% 10.7.0.1/32
+
+[IP Rewrite]
+10.7.0.1 = reflect
