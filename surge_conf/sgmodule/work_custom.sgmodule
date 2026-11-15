@@ -3,9 +3,20 @@
 #!category=conf
 
 [General]
-dns-server = system
-skip-proxy = 192.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 127.0.0.1, localhost, *.local, *.byted.org, *bytedance.net
+skip-proxy = %APPEND% *.byted.org, *bytedance.net
 #always-raw-tcp-hosts = *.byted.org
 
 [Rule]
 RULE-SET,providers/ByteDance.list,FLOW
+
+# === Devbox ===
+SRC-IP,10.37.62.70,PROXY,"notification-text=\"devbox 场景\"","notification-interval=60"
+SRC-IP,10.37.73.194,PROXY,"notification-text=\"devbox2 场景\"","notification-interval=60"
+SRC-IP,10.37.103.156,PROXY,"notification-text=\"devbox3 场景\"","notification-interval=60"
+SRC-IP,10.37.103.158,PROXY,"notification-text=\"devbox4 场景\"","notification-interval=60"
+SRC-IP,10.37.96.33,PROXY,"notification-text=\"devbox5 场景\"","notification-interval=60"
+SRC-IP,10.37.103.186,PROXY,"notification-text=\"devbox6 场景\"","notification-interval=60"
+
+[Host]
+*.byted.org = server:system
+*.bytedance.net = server:system
