@@ -3,7 +3,7 @@
 #!category=conf
 
 [General]
-skip-proxy = %APPEND% *.byted.org, *bytedance.net
+#skip-proxy = %APPEND% *.byted.org, *bytedance.net
 #always-raw-tcp-hosts = *.byted.org
 
 [Rule]
