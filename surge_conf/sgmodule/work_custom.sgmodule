@@ -9,6 +9,13 @@ skip-proxy = %APPEND% *.byted.org, *bytedance.net
 [Rule]
 RULE-SET,providers/ByteDance.list,FLOW
 
+# === 公司终端安全与接入软件：始终直连 ===
+PROCESS-NAME,"/Applications/Microsoft Defender.app/",FLOW
+PROCESS-NAME,/Applications/CorpLink.app/,FLOW
+PROCESS-NAME,/Library/CorpLink/,FLOW
+PROCESS-NAME,/usr/local/corplink/,FLOW
+DOMAIN-SUFFIX,endpoint.security.microsoft.com,FLOW
+
 # === Devbox ===
 SRC-IP,10.37.62.70,PROXY,"notification-text=\"devbox 场景\"","notification-interval=60"
 SRC-IP,10.37.73.194,PROXY,"notification-text=\"devbox2 场景\"","notification-interval=60"
